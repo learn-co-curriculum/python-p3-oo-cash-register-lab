@@ -21,9 +21,14 @@ class TestCashRegister:
         assert(self.cash_register_with_discount.discount == 20)
 
     def test_total_attribute(self):
-        '''sets an instance variable total on initialization to zero.'''
+        '''sets an instance variable total to zero on initialization.'''
         assert(self.cash_register.total == 0)
         assert(self.cash_register_with_discount.total == 0)
+
+    def test_items_attribute(self):
+        '''sets an instance variable items to empty list on initialization.'''
+        assert(self.cash_register.items == [])
+        assert(self.cash_register_with_discount.items == [])
 
     def test_add_item(self):
         '''accepts a title and a price and increases the total.'''
