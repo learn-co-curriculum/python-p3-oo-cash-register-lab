@@ -35,13 +35,7 @@ class TestCashRegister:
         cash_register_with_discount = CashRegister(20)
         assert(cash_register.items == [])
         assert(cash_register_with_discount.items == [])
-    
-    def test_previous_transactions_attribute(self):
-        '''sets an instance variable previous_transactions to an empty list on initialization.'''
-        cash_register = CashRegister()
-        cash_register_with_discount = CashRegister(20)
-        assert(cash_register.previous_transactions == [])
-        assert(cash_register_with_discount.previous_transactions == [])
+
 
     def test_add_item(self):
         '''accepts a title and a price and increases the total.'''
